@@ -9,14 +9,14 @@
     
 
 <script>
-// Question no 1
+document.write("<h3>Question No 1</h3>"+"<br>");
 
 var first = prompt("Enter your first name");
 var last = prompt("Enter your last name");
 document.write("Full Name: "+first+" "+last);
 document.write("<br>");
 
-// Question No 2
+document.write("<h3>Question No 2</h3>"+"<br>");
 
 var fav = prompt("Enter your favorite mobile");
 document.write("My favorite phone is: " + fav);
@@ -24,36 +24,79 @@ document.write("<br>");
 document.write("Length of string: "+fav.length);
 document.write("<br>");
 
-// Question No 3
+document.write("<h3>Question No 3</h3>"+"<br>");
 var ntlt = "Pakistani";
 var index = ntlt.indexOf('n')
 document.write("String: "+ntlt);
 document.write("<br>");
 document.write("index of 'n': "+ index);
 document.write("<br>");
-// Question No 4
+document.write("<h3>Question No 4</h3>"+"<br>");
 var word = "Hello world";
 var nindex = word.lastIndexOf("l");
 document.write("String: "+word);
 document.write("<br>");
 document.write("index of 'l': "+ nindex);
 document.write("<br>");
-// Question No 5
+document.write("<h3>Question No 5</h3>"+"<br>");
 var pak = "Pakistani";
 document.write("String: "+pak +"<br>");
 document.write("Character at index at 3: "+pak.charAt(3));
 document.write("<br>");
-// Question No 6
+document.write("<h3>Question No 6</h3>"+"<br>");
 var pk = "Pak";
 var pl = "istan";
 document.write(pk.concat(pl));
 document.write("<br>");
-// Question No  7
+document.write("<h3>Question No 7</h3>"+"<br>");
 var hyd = "Hyderabad";
 document.write(hyd);
 document.write("<br>");
 document.write("After Replace: "+hyd.replace("Hyderabad","Islamabad"))
 document.write("<br>")
+document.write("<h3>Question No 8</h3>"+"<br>");
+var message = "Ali and Sami are best friends. They play cricket and football together.";
+document.write(message.replace(/and/g,"&"));
+document.write("<br>")
+document.write("<h3>Question No 9</h3>"+"<br>");
+var value = "478";
+var num = Number(value);
+document.write("Value: "+value+"<br>")
+document.write("Type: "+typeof(value)+"<br>");
+document.write("Value: "+value+"<br>")
+document.write("Type: "+typeof(num)+"<br>")
+document.write("<br>")
+document.write("<h3>Question No 10</h3>"+"<br>");
+var goods = prompt("Enter Your Faverite Thing");
+document.write(goods.toUpperCase());
+document.write("<br>")
+document.write("<h3>Question No 11</h3>"+"<br>");
+// first letter capital
+var inp = prompt("Input your idea");
+var fst = inp.charAt(0).toUpperCase()+inp.slice(1);
+document.write(fst);
+document.write("<br>")
+document.write("<h3>Question No 12</h3>"+"<br>");
+var nums = 35.56 ;
+var str = nums.toString();
+var rm = str.slice(0,2)+str.slice(3);
+document.write(rm);
+document.write("<br>")
+document.write("<h3>Question No 13</h3>"+"<br>");
+
+var username = prompt("Enter your username:");
+
+while(/[.,!@><?]/.test(username)){
+    alert("Please enter a valid user name ");
+username = prompt("Please try again:");
+}
+    alert("Username accepted: " + username);
+document.write("<br>")
+
+
+
+
+
 
 </script>
 
